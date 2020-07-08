@@ -1,7 +1,8 @@
-import CyanCardFront from "../src/assets/CyanCardFront.png";
-import cyanCardBack from "../src/assets/cyanCardBack.png";
-import magentaCardFront from "../src/assets/magentaCardFront.png";
-import magentaCardBack from "../src/assets/MagentaCardBack.png";
+import CyanCardFront from "./CyanCardFront.png";
+import cyanCardBack from "./cyanCardBack.png";
+import magentaCardFront from "./magentaCardFront.png";
+import magentaCardBack from "./MagentaCardBack.png";
+
 
 export default class Game extends Phaser.Scene {
     constructor() {
