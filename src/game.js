@@ -1,7 +1,4 @@
-import CyanCardFront from "../src/assets/CyanCardFront.png";
-import cyanCardBack from "../src/assets/cyanCardBack.png";
-import magentaCardFront from "../src/assets/magentaCardFront.png";
-import magentaCardBack from "../src/assets/MagentaCardBack.png";
+import cyanCardBack from "../src/cyanCardBack.png";
 
 
 export default class Game extends Phaser.Scene {
@@ -12,10 +9,7 @@ export default class Game extends Phaser.Scene {
     }
 
     preload() {
-        this.load.image('cyanCardFront', CyanCardFront);
         this.load.image('cyanCardBack', cyanCardBack);
-        this.load.image('magentaCardFront',magentaCardFront);
-        this.load.image('magentaCardBack', magentaCardBack);
     }
 
     create() {
@@ -23,7 +17,7 @@ export default class Game extends Phaser.Scene {
 
         let self = this;
 
-        this.card = this.add.image(300, 300, 'cyanCardFront').setScale(0.3, 0.3).setInteractive();
+        this.card = this.add.image(300, 300, 'cyanCardBack').setScale(0.3, 0.3).setInteractive();
         this.input.setDraggable(this.card);
 
         this.dealCards = () => {
